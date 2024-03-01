@@ -18,7 +18,7 @@ def authorization_test_1(browser):
     rtrn.get_path_wait(browser, locator.button_login).click()
     print("Click button Login")
     assert browser.current_url == check_url.url_main
-    print(f"URL Главной страницы {check_url.url_start} \n")
+    print(f"URL Главной страницы {check_url.url_main} \n")
     rtrn.get_path_wait(browser, locator.button_burger).click()
     rtrn.get_path_wait(browser, locator.button_logout).click()
     print("Logout")
